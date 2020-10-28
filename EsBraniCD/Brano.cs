@@ -32,5 +32,20 @@ namespace EsBraniCD
             get;
             set;
         }
+        
+        public bool shortSong(double durata)
+        {
+            if (Durata < durata)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public override string ToString()
+        {
+            return Titolo + " " + Autore + " " + Durata;
+        }
     } 
 }
